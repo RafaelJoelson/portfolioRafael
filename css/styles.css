@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:#5f4f97;
+    text-align: center;
+}
+
+header {
+
+    text-align: right;
+    color: #fff;
+    padding: 20px;
+
+}
+
+nav{
+    display: inline-flex;
+}
+
+nav a {
+
+    font-size: 20px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.profile-container {
+
+    margin: auto;
+    text-align: left;
+    color: black;
+    width: 90%;
+    height: 30%;
+    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+}
+
+.profile-greetings-container {
+
+    font-size: 22px;
+    color: #fff;
+    margin: auto;
+    width: 60%;
+
+}
+
+.socials-container{
+    
+    margin: auto;
+    display: inline-flex;
+    text-align: center;
+}
+
+.socials-container div{
+
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.socials-container img{
+
+    width: 100%;
+    
+}
+
+.socials-container div:hover{
+
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    
+}
+
+.profile-picture-container {
+
+    margin: auto;
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 8px #35295f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.profile-picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutme-divisor {
+
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+
+}
+
+.aboutme-container {
+    
+    text-align: center;
+    background-color: #fff;
+
+}
+
+section {
+
+    text-align: left;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: inline-flex;
+}
+
+.home-aboutme-text-container{
+    width: 90%;
+    padding: 10px;
+}
+.aboutme-text-container{
+    width: 50%;
+    padding: 10px;
+}
+.img-container{
+
+    float: right;
+    margin: auto;
+    width: 50%;
+    overflow: hidden;
+
+}
+
+.img-container img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*headers/about/education*/
+.about-header-container {
+
+    text-align: left;
+    width: 90%;
+    padding: 10px;
+    color: #fff;
+    
+
+}
+/*about.html*/
+.about-img-container{
+
+    float: right;
+    margin: auto;
+    width: 580px;
+
+
+}
+
+.about-img-container img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+}
+/*portfolio.html*/
+.card-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card-container a{
+    text-decoration: none;
+    color: black;
+}
+.card-container a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.card {
+    text-align: justify;
+    width: 300px; /* Largura inicial dos cards */
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+}
+
+.card-content {
+    padding: 15px;
+}
+/*projetcs*/
+.project-container {
+    
+    text-align: center;
+    background-color: #fff;
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+
+}
+.project-text-container {
+    
+    text-align: left;
+    background-color: #fff;   
+    
+}
+.project-vid-container{
+    
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #333;
+
+}
+.project-vid-container video{
+
+    width: 100%;
+
+}
+/*contact.html*/
+.contact-form form {
+
+    margin: auto;
+    width: 500px;
+    height: 370px;
+    display: grid;
+    gap: 10px;
+
+}
+
+label {
+
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.buttons-container {
+
+    display: inline-flex;
+
+}
+
+button {
+
+    margin: auto;
+    width: 45%;
+    background-color: #35295f;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo opcional para melhorar a experiência de usuário */
+input:focus,
+textarea:focus {
+    border: 2px solid #4caf50;
+    outline: none;
+}
+/*success.html*/
+.success-container {
+
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+
+}

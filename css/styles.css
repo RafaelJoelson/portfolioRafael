@@ -1,32 +1,114 @@
-body {
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Isso garante que o padding e border não afetem a largura e altura */
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-color:#5f4f97;
+    background-color: #5f4f97;
     text-align: center;
 }
 
 header {
-
     text-align: right;
     color: #fff;
     padding: 20px;
-
+    position: relative;
 }
 
-nav{
-    display: inline-flex;
+/* Estilos básicos para o botão hambúrguer */
+.hamburger {
+    text-align: right;
+    display: none; /* Será exibido em telas menores via @media */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
-nav a {
+.hamburger img {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
 
+/* Estilo padrão para o menu */
+.nav-menu {
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    width: 100%;
+    left: 0;
+}
+
+.nav-menu a {
     font-size: 20px;
     margin: 5px;
+    padding: 15px;
     color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.nav-menu a:hover {
     text-decoration: none;
 }
+
+/* Exibe o menu quando o botão hambúrguer é clicado */
+.nav-menu.active {
+    display: flex;
+}
+
+/* Ajuste os estilos para o modo desktop */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; /* Esconde o ícone hambúrguer em telas maiores */
+    }
+
+    .nav-menu {
+        
+        display: inline-flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        width: auto;
+    }
+
+    .nav-menu a {
+        padding: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* Mostra o botão hambúrguer no modo mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Mostra o botão hambúrguer em telas menores */
+    }
+
+    .nav-menu {
+        display: none; /* O menu só aparece quando o botão é clicado */
+        background-color: #333;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Exibe o menu quando ativado */
+        flex-direction: column;
+    }
+}
+
 .container{
 
+    justify-content: center;
     margin: 20px;
     padding: 10px;
 
@@ -34,12 +116,10 @@ nav a {
 
 .profile-container {
 
-    margin: auto;
-    text-align: left;
+    margin: 0px;
+    text-align: center;
     color: black;
-    width: 90%;
-    height: 30%;
-    padding: 10px;
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap-reverse;
 }
@@ -51,6 +131,11 @@ nav a {
     margin: auto;
     width: 60%;
 
+}
+
+.greetings {
+    text-align: left;
+    margin-top: 10px;
 }
 
 .socials-container{
@@ -84,10 +169,9 @@ nav a {
 .profile-picture-container {
 
     margin: auto;
-    width: auto;
-    height: 400px;
+    width: 400px;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: #fff;
     border: solid 8px #35295f;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -116,24 +200,11 @@ nav a {
 
 }
 
-section {
-
-    text-align: left;
-    width: 90%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    display: inline-flex;
-}
-
 .home-aboutme-text-container{
     width: 90%;
     padding: 10px;
 }
-.aboutme-text-container{
-    width: 50%;
-    padding: 10px;
-}
+
 .img-container{
 
     float: right;
@@ -168,6 +239,13 @@ a:hover {
     text-decoration: underline;
 }
 /*headers/about/education*/
+.education, .self-taught-skills {
+    flex-direction: row;
+    padding: 20px;
+    width: 90%;
+    background-color: #fff;
+    display: inline-flex;
+}
 .about-header-container {
 
     text-align: left;
@@ -175,12 +253,24 @@ a:hover {
     padding: 10px;
     color: #fff;
     
+    
 
 }
 /*about.html*/
+.about {
+    flex-direction: row;
+    padding: 20px;
+    width: 90%;
+    background-color: #fff;
+    display: inline-flex;
+}
+.aboutme-text-container{
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+}
 .about-img-container{
 
-    float: right;
     margin: auto;
     width: 580px;
 
@@ -195,47 +285,74 @@ a:hover {
 
 }
 /*portfolio.html*/
+/* Estilos gerais para o container dos cards */
 .card-container {
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-.card-container a{
-    text-decoration: none;
-    color: black;
-}
-.card-container a:visited{
-    color: black;
-    text-decoration: none;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno do container */
 }
 
+/* Estilos para cada card */
 .card {
-    text-align: justify;
-    width: 300px; /* Largura inicial dos cards */
-    height: 500px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Impede que o conteúdo saia da borda do card */
+    max-width: 300px; /* Largura máxima dos cards */
+    flex: 1 1 300px; /* Flexibilidade dos cards para se ajustar ao tamanho do container */
+    transition: transform 0.3s; /* Animação de hover */
+    text-decoration: none; /* Remove a sublinha em links */
 }
 
 .card:hover {
-    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+}
+
+.card a:hover{
+    text-decoration: none;
 }
 
 .card img {
-    width: 100%;
-    height: 180px;
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Corta a imagem para preencher a área, sem distorção */
+    display: block; /* Remove espaço embaixo da imagem */
 }
 
+
 .card-content {
-    padding: 15px;
+    height: 255px;
+    padding: 15px; /* Espaçamento interno do conteúdo */
+    text-align: center; /* Centraliza o texto */
 }
+
+.card h3 {
+    font-size: 1.2em; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.card p {
+    font-size: 1em; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do parágrafo */
+    color: #555; /* Cor do texto */
+}
+
+.card h4 {
+    font-size: 0.9em; /* Tamanho do subtítulo */
+    color: #888; /* Cor do subtítulo */
+    margin-top: 5px; /* Espaçamento acima do subtítulo */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {  
+    .card {
+        max-width: 95%; /* Cards ocupam toda a largura disponível */
+        height: 400px;
+    }
+}
+
 /*projetcs*/
 .project-container {
     
@@ -265,6 +382,15 @@ a:hover {
 
 }
 /*contact.html*/
+.contact-form{
+
+    flex-direction: row;
+    padding: 20px;
+    width: 90%;
+    background-color: #fff;
+    display: inline-flex;
+    margin-bottom: 50px;
+}
 .contact-form form {
 
     margin: auto;
@@ -285,7 +411,7 @@ label {
 input,
 textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 16px;
     box-sizing: border-box;
 }
@@ -296,8 +422,7 @@ textarea {
 
 }
 
-button {
-
+.contact-form button {
     margin: auto;
     width: 45%;
     background-color: #35295f;
@@ -309,9 +434,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.contact-form button:hover {
     background-color: #45a049;
 }
+
 
 /* Estilo opcional para melhorar a experiência de usuário */
 input:focus,
@@ -328,3 +454,65 @@ textarea:focus {
     padding: 5px;
 
 }
+/* Ajuste geral para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        margin-right: 10px;
+        padding: 0px;
+    }
+
+    .profile-container,
+    .project-container {
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+
+    .profile-greetings-container,
+    .aboutme-text-container,
+    .img-container,
+    .card {
+        
+        width: 100%;
+    }
+
+    .img-container img,
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutme-divisor,
+    .aboutme-container,
+    .project-text-container,
+    .contact-form form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img-container{
+        max-width: 350px;
+    }
+}
+
+/* Ajuste específico para telas muito pequenas (por exemplo, telefones em modo retrato) */
+@media (max-width: 480px) {
+
+    .profile-picture-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-form form {
+        width: 100%;
+        height: auto;
+    }
+}
+

@@ -201,8 +201,9 @@ header {
 }
 
 .home-aboutme-text-container{
+    text-align: left;
     width: 90%;
-    padding: 10px;
+    padding: 20px;
 }
 
 .img-container{
@@ -239,7 +240,7 @@ a:hover {
     text-decoration: underline;
 }
 /*headers/about/education*/
-.education, .self-taught-skills {
+.education, .self-taught-skills,.project-container {
     flex-direction: row;
     padding: 20px;
     width: 90%;

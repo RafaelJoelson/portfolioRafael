@@ -26,7 +26,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     const data = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch('/api/send-email', {
+        const response = await fetch('./api/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

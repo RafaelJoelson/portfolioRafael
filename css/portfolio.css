@@ -1,0 +1,97 @@
+/*portfolio.html*/
+/* Estilos gerais para o container dos cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno do container */
+}
+
+/* Estilos para cada card */
+.card {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Impede que o conteúdo saia da borda do card */
+    max-width: 300px; /* Largura máxima dos cards */
+    flex: 1 1 300px; /* Flexibilidade dos cards para se ajustar ao tamanho do container */
+    transition: transform 0.3s; /* Animação de hover */
+    text-decoration: none; /* Remove a sublinha em links */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+}
+
+.card a:hover{
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Corta a imagem para preencher a área, sem distorção */
+    display: block; /* Remove espaço embaixo da imagem */
+}
+
+
+.card-content {
+    height: 255px;
+    padding: 15px; /* Espaçamento interno do conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card h3 {
+    font-size: 1.2em; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.card p {
+    font-size: 1em; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do parágrafo */
+    color: #555; /* Cor do texto */
+}
+
+.card h4 {
+    font-size: 0.9em; /* Tamanho do subtítulo */
+    color: #888; /* Cor do subtítulo */
+    margin-top: 5px; /* Espaçamento acima do subtítulo */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {  
+    .card {
+        max-width: 95%; /* Cards ocupam toda a largura disponível */
+        height: 400px;
+    }
+}
+
+/*projetcs*/
+.project-container {
+    
+    text-align: center;
+    background-color: #fff;
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+
+}
+.project-text-container {
+    
+    text-align: left;
+    background-color: #fff;   
+    
+}
+.project-vid-container{
+    
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #333;
+
+}
+.project-vid-container video{
+
+    width: 100%;
+
+}

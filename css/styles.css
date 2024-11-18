@@ -60,6 +60,7 @@ header {
 }
 .nav-menu a:hover {
     text-decoration: none;
+    background-color: #35295f;
 }
 
 /* Exibe o menu quando o botão hambúrguer é clicado */
@@ -114,75 +115,6 @@ header {
 
 }
 
-.profile-container {
-
-    margin: 0px;
-    text-align: center;
-    color: black;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap-reverse;
-}
-
-.profile-greetings-container {
-
-    font-size: 22px;
-    color: #fff;
-    margin: auto;
-    width: 60%;
-
-}
-
-.greetings {
-    text-align: left;
-    margin-top: 10px;
-}
-
-.socials-container{
-    
-    margin: auto;
-    display: inline-flex;
-    text-align: center;
-}
-
-.socials-container div{
-
-    margin: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.socials-container img{
-
-    width: 100%;
-    
-}
-
-.socials-container div:hover{
-
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-    
-}
-
-.profile-picture-container {
-
-    margin: auto;
-    width: 360px;
-
-}
-
-.profile-picture-container img {
-
-    border-radius: 50%;
-    width: 100%;
-    object-fit: cover;
-    border: solid 8px #35295f;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    
-}
-
 @keyframes fadeLeft {
     from {
         opacity: 0;
@@ -205,12 +137,27 @@ header {
     }
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .fade-left {
     animation: fadeLeft 1.5s ease-in-out;
 }
 
 .fade-right {
     animation: fadeRight 1.5s ease-in-out;
+}
+
+.fade-up {
+    animation: fadeUp 1.5s ease-in-out;
 }
 
 .aboutme-divisor {
@@ -254,6 +201,8 @@ header {
 }
 
 footer {
+    border: 0;
+    padding: 0;
     text-align: center;
     padding: 10px;
     background-color: #333;
@@ -307,7 +256,6 @@ a:hover {
 
 
 }
-
 .about-img-container img {
 
     width: 100%;
@@ -315,161 +263,6 @@ a:hover {
     border-radius: 8px;
 
 }
-/*portfolio.html*/
-/* Estilos gerais para o container dos cards */
-.card-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
-    justify-content: center; /* Centraliza os cards */
-    gap: 20px; /* Espaçamento entre os cards */
-    padding: 20px; /* Espaçamento interno do container */
-}
-
-/* Estilos para cada card */
-.card {
-    background-color: #fff; /* Fundo branco */
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    overflow: hidden; /* Impede que o conteúdo saia da borda do card */
-    max-width: 300px; /* Largura máxima dos cards */
-    flex: 1 1 300px; /* Flexibilidade dos cards para se ajustar ao tamanho do container */
-    transition: transform 0.3s; /* Animação de hover */
-    text-decoration: none; /* Remove a sublinha em links */
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
-}
-
-.card a:hover{
-    text-decoration: none;
-}
-
-.card img {
-    width: 100%; /* Imagem ocupa toda a largura do card */
-    height: 200px; /* Altura fixa para todas as imagens */
-    object-fit: cover; /* Corta a imagem para preencher a área, sem distorção */
-    display: block; /* Remove espaço embaixo da imagem */
-}
-
-
-.card-content {
-    height: 255px;
-    padding: 15px; /* Espaçamento interno do conteúdo */
-    text-align: center; /* Centraliza o texto */
-}
-
-.card h3 {
-    font-size: 1.2em; /* Tamanho do título */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
-}
-
-.card p {
-    font-size: 1em; /* Tamanho do texto */
-    margin-bottom: 10px; /* Espaçamento abaixo do parágrafo */
-    color: #555; /* Cor do texto */
-}
-
-.card h4 {
-    font-size: 0.9em; /* Tamanho do subtítulo */
-    color: #888; /* Cor do subtítulo */
-    margin-top: 5px; /* Espaçamento acima do subtítulo */
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 600px) {  
-    .card {
-        max-width: 95%; /* Cards ocupam toda a largura disponível */
-        height: 400px;
-    }
-}
-
-/*projetcs*/
-.project-container {
-    
-    text-align: center;
-    background-color: #fff;
-    display: inline-flex;
-    flex-wrap: wrap-reverse;
-
-}
-.project-text-container {
-    
-    text-align: left;
-    background-color: #fff;   
-    
-}
-.project-vid-container{
-    
-    margin: auto;
-    padding: 10px;
-    border-radius: 8px;
-    background: #333;
-
-}
-.project-vid-container video{
-
-    width: 100%;
-
-}
-/*contact.html*/
-.contact-form{
-
-    flex-direction: row;
-    padding: 20px;
-    width: 90%;
-    background-color: #fff;
-    display: inline-flex;
-    margin-bottom: 50px;
-}
-.contact-form form {
-
-    margin: auto;
-    width: 500px;
-    height: 370px;
-    display: grid;
-    gap: 10px;
-
-}
-
-label {
-
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-}
-
-.buttons-container {
-
-    display: inline-flex;
-
-}
-
-.contact-form button {
-    margin: auto;
-    width: 45%;
-    background-color: #35295f;
-    color: #fff;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #45a049;
-}
-
-
 /* Estilo opcional para melhorar a experiência de usuário */
 input:focus,
 textarea:focus {

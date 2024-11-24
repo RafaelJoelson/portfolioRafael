@@ -67,32 +67,3 @@
         height: 400px;
     }
 }
-
-/*projetcs*/
-.project-container {
-    
-    text-align: center;
-    background-color: #fff;
-    display: inline-flex;
-    flex-wrap: wrap-reverse;
-
-}
-.project-text-container {
-    
-    text-align: left;
-    background-color: #fff;   
-    
-}
-.project-vid-container{
-    
-    margin: auto;
-    padding: 10px;
-    border-radius: 8px;
-    background: #333;
-
-}
-.project-vid-container video{
-
-    width: 100%;
-
-}

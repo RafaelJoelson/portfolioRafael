@@ -1,36 +1,35 @@
-/*about.html*/
+/* Estilos gerais para a página about.html (sobre mim) */
 .about {
-    flex-direction: row;
-    padding: 20px;
-    width: 90%;
-    margin-bottom: -40px;
-    display: inline-flex;
-    position: relative;
-    z-index: 0;
+    flex-direction: row; /* Define os itens da seção em linha (horizontalmente) */
+    padding: 20px; /* Adiciona espaçamento interno à seção */
+    width: 90%; /* Define a largura da seção como 90% do contêiner */
+    margin-bottom: -40px; /* Ajusta o espaçamento inferior da seção */
+    display: inline-flex; /* Define a exibição como flexível em linha */
+    position: relative; /* Posiciona o elemento em relação ao seu contêiner pai */
+    z-index: 0; /* Define a ordem de sobreposição padrão */
 }
 
-.about-img-container{
-
-    margin: auto;
-    width: 580px;
-    z-index: 0;
-
-
+/* Estilos para o contêiner da imagem na seção "about" */
+.about-img-container {
+    margin: auto; /* Centraliza o contêiner da imagem dentro da seção */
+    width: 580px; /* Define a largura máxima para o contêiner da imagem */
+    z-index: 0; /* Define a ordem de sobreposição padrão */
 }
+
+/* Estilos para a imagem dentro do contêiner */
 .about-img-container img {
-
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    z-index: 0;
-
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: 100%; /* Faz com que a altura da imagem se ajuste proporcionalmente */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    z-index: 0; /* Define a ordem de sobreposição padrão */
 }
-/* Ajuste geral para dispositivos móveis */
+
+/* Ajustes gerais para dispositivos móveis (telas com largura máxima de 768px) */
 @media (max-width: 768px) {
-    .about{
-        flex-direction: column;
+    .about {
+        flex-direction: column; /* Altera os itens da seção para uma direção vertical (coluna) */
     }
-    .about-img-container{
-        max-width: 350px;
+    .about-img-container {
+        max-width: 350px; /* Reduz a largura máxima do contêiner da imagem em dispositivos menores */
     }
 }

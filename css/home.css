@@ -1,144 +1,151 @@
-.container{
-
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-
+/* Contêiner principal para centralizar conteúdo */
+.container {
+    justify-content: center; /* Centraliza horizontalmente o conteúdo flexível */
+    margin: 20px; /* Espaçamento externo */
+    padding: 10px; /* Espaçamento interno */
 }
+
+/* Contêiner para a seção do perfil */
 .profile-container {
-
-    margin: 0px;
-    text-align: center;
-    color: black;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap-reverse;
+    margin: 0px; /* Remove margens */
+    text-align: center; /* Centraliza texto */
+    color: black; /* Define a cor do texto */
+    width: 100%; /* Ocupa toda a largura disponível */
+    display: flex; /* Alinha itens em linha e permite flexibilidade */
+    flex-wrap: wrap-reverse; /* Quebra itens em uma nova linha na ordem inversa */
 }
 
+/* Contêiner para as saudações no perfil */
 .profile-greetings-container {
-
-    font-size: 22px;
-    color: #fff;
-    margin: auto;
-    width: 60%;
-
+    font-size: 22px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    margin: auto; /* Centraliza verticalmente */
+    width: 60%; /* Define largura como 60% */
 }
 
+/* Estilo para as saudações */
 .greetings {
-    text-align: left;
-    margin-top: 10px;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: 10px; /* Espaçamento superior */
 }
 
-.socials-container{
-    
-    margin: auto;
-    display: inline-flex;
-    text-align: center;
+/* Contêiner para ícones das redes sociais */
+.socials-container {
+    margin: auto; /* Centraliza o contêiner */
+    display: inline-flex; /* Alinha ícones em linha */
+    text-align: center; /* Centraliza o texto */
 }
 
-.socials-container div{
-
-    margin: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
+/* Estilo individual para cada ícone de rede social */
+.socials-container div {
+    margin: 20px; /* Espaçamento ao redor de cada ícone */
+    width: 50px; /* Define largura dos ícones */
+    height: 50px; /* Define altura dos ícones */
+    border-radius: 50%; /* Deixa os ícones circulares */
+    overflow: hidden; /* Oculta conteúdo que ultrapassa o contêiner */
 }
 
-.socials-container img{
-
-    width: 100%;
-    
+/* Estilo para as imagens dentro dos ícones */
+.socials-container img {
+    width: 100%; /* Ocupa toda a largura do contêiner */
 }
 
-.socials-container div:hover{
-
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-    
+/* Efeito de hover nos ícones das redes sociais */
+.socials-container div:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* Adiciona brilho ao passar o mouse */
 }
 
+/* Contêiner para a imagem de perfil */
 .profile-picture-container {
-
-    margin: auto;
-    width: 360px;
-
+    margin: auto; /* Centraliza o contêiner */
+    width: 360px; /* Define a largura máxima */
 }
 
+/* Estilo para a imagem de perfil */
 .profile-picture-container img {
-
-    border-radius: 50%;
-    width: 100%;
-    object-fit: cover;
-    border: solid 8px #35295f;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    
+    border-radius: 50%; /* Deixa a imagem circular */
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    object-fit: cover; /* Mantém a proporção da imagem ao preencher o espaço */
+    border: solid 8px #35295f; /* Adiciona borda ao redor da imagem */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra sutil */
 }
 
+/* Contêiner para a seção "Sobre Mim" na página inicial */
 .home-aboutme-container {
-
-    width: 100%;
-    background-color: #fff;
-    display: inline-flex; 
-
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #fff; /* Fundo branco */
+    display: inline-flex; /* Alinha itens em linha */
 }
 
-.home-text-container{
-    text-align: left;
-    width: 60%;
-    padding: 20px;
-}
-.button-container{
-    width: 40%;
-    margin: 10px;
+/* Estilo para o texto na seção "Sobre Mim" */
+.home-text-container {
+    text-align: left; /* Alinha texto à esquerda */
+    width: 60%; /* Define largura como 60% */
+    padding: 20px; /* Adiciona espaçamento interno */
 }
 
-.button-container button{
-    margin: 100px;
-    background-color: #35295f;
-    color: #fff;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
+/* Contêiner para os botões */
+.button-container {
+    width: 40%; /* Define largura como 40% */
+    margin: 10px; /* Adiciona espaçamento externo */
+    align-content: center; /* Centraliza conteúdo verticalmente */
+    justify-items: center; /* Centraliza itens horizontalmente */
 }
-.button-container button:hover{
-    background-color: #45a049;
+
+/* Estilo padrão para os botões */
+.button-container button {
+    background-color: #35295f; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 22px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    padding: 20px 25px; /* Espaçamento interno vertical e horizontal */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
 }
-/* Ajuste geral para dispositivos móveis */
+
+/* Efeito de hover nos botões */
+.button-container button:hover {
+    background-color: #45a049; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Ajustes gerais para dispositivos móveis */
 @media (max-width: 768px) {
     .container {
-        margin-right: 10px;
-        padding: 0px;
+        margin-right: 10px; /* Ajusta margens para telas menores */
+        padding: 0px; /* Remove padding */
     }
 
     .profile-container,
     .project-container {
-        flex-direction:column-reverse;
-        align-items: center;
+        flex-direction: column-reverse; /* Muda direção dos itens para coluna */
+        align-items: center; /* Centraliza itens horizontalmente */
     }
 
     .profile-greetings-container {
-        width: 100%;
+        width: 100%; /* Ajusta largura para telas menores */
     }
 
     .profile-picture-container {
-        width: 250px;
-        height: 250px;
+        width: 250px; /* Reduz largura da imagem */
+        height: 250px; /* Ajusta altura proporcionalmente */
     }
 
     .home-aboutme-container {
-        width: 100%;
-        background-color: #fff;
-        flex-direction: column;
-    }
-    .home-text-container{
-
-        width: 90%;
-        padding: 20px;
-    }
-    .button-container{
-        width: 100%;
+        width: 100%; /* Define largura total */
+        background-color: #fff; /* Mantém fundo branco */
+        flex-direction: column; /* Organiza itens verticalmente */
     }
 
+    .home-text-container {
+        width: 90%; /* Ajusta largura para 90% */
+        padding: 20px; /* Mantém padding */
+    }
+
+    .button-container {
+        width: 100%; /* Largura total */
+    }
+
+    .button-container button {
+        margin: 20px; /* Espaçamento ao redor dos botões */
+    }
 }

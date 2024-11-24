@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Rafael Joelson</title>
+    <style>
+                /* Estilo geral para o contêiner dos projetos */
+        .project-container {
+            text-align: center; /* Centraliza o conteúdo textualmente */
+            background-color: #fff; /* Fundo branco */
+            display: inline-flex; /* Usa flexbox para organizar os itens em linha */
+            flex-wrap: wrap-reverse; /* Faz com que os itens se reorganizem para a próxima linha em ordem inversa */
+            flex-direction: row; /* Organiza os itens em uma linha horizontal */
+            padding: 20px; /* Espaçamento interno */
+            width: 90%; /* Largura definida como 90% do contêiner pai */
+        }
+
+        /* Estilo para o contêiner de texto do projeto */
+        .project-text-container {
+            text-align: left; /* Alinha o texto à esquerda */
+            background-color: #fff; /* Fundo branco */
+        }
+
+        /* Estilo para o contêiner de vídeo do projeto */
+        .project-vid-container {
+            margin: auto; /* Centraliza o contêiner de vídeo */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            background: #333; /* Fundo cinza escuro */
+        }
+
+        /* Estilo específico para os vídeos */
+        .project-vid-container video {
+            width: 100%; /* O vídeo ocupa toda a largura do contêiner */
+        }
+
+        /* Ajustes gerais para dispositivos móveis */
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column-reverse; /* Reorganiza os itens em uma coluna inversa para melhor visualização */
+                align-items: center; /* Centraliza os itens no eixo transversal */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>

@@ -1,68 +1,67 @@
-/*contact.html*/
-.contact-form{
-
-    flex-direction: row;
-    margin-top: 10px;
-    padding: 20px;
-    width: 90%;
-    background-color: #fff;
-    display: inline-flex;
-    margin-bottom: 50px;
-
+/* Estilo para o contêiner principal do formulário de contato */
+.contact-form {
+    flex-direction: row; /* Organiza os elementos em linha horizontal */
+    margin-top: 10px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+    width: 90%; /* Define a largura como 90% do contêiner pai */
+    background-color: #fff; /* Fundo branco */
+    display: inline-flex; /* Exibe os itens em linha com flexbox */
+    margin-bottom: 50px; /* Espaçamento inferior */
 }
+
+/* Estilo para o formulário dentro do contêiner de contato */
 .contact-form form {
-
-    margin: auto;
-    width: 500px;
-    height: 370px;
-    display: grid;
-    gap: 10px;
-
+    margin: auto; /* Centraliza o formulário dentro do contêiner */
+    width: 500px; /* Define largura fixa para o formulário */
+    height: 370px; /* Altura fixa */
+    display: grid; /* Usa grid layout para organizar os campos */
+    gap: 10px; /* Espaçamento entre os elementos do formulário */
 }
 
+/* Estilo básico para campos de entrada de texto e textarea */
 input,
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 16px; /* Espaçamento inferior entre os campos */
+    box-sizing: border-box; /* Inclui padding e bordas dentro da largura total */
 }
 
+/* Contêiner para os botões do formulário */
 .buttons-container {
-
-    display: inline-flex;
-
+    display: inline-flex; /* Organiza os botões em linha */
 }
 
+/* Estilo para os botões dentro do formulário */
 .contact-form button {
-    margin: auto;
-    width: 45%;
-    background-color: #35295f;
-    color: #fff;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
+    margin: auto; /* Centraliza o botão dentro do contêiner */
+    width: 45%; /* Define a largura como 45% do contêiner */
+    background-color: #35295f; /* Fundo roxo escuro */
+    color: #fff; /* Texto branco */
+    font-size: 22px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 15px; /* Espaçamento interno horizontal e vertical */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
 }
 
+/* Efeito de hover para os botões */
 .contact-form button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
 }
 
-
-/* Ajuste geral para dispositivos móveis */
+/* Ajustes gerais para dispositivos móveis */
 @media (max-width: 768px) {
     .contact-form form {
-        width: 100%;
-        padding: 10px;
+        width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+        padding: 10px; /* Reduz o espaçamento interno */
     }
 }
-/* Ajuste específico para telas muito pequenas (por exemplo, telefones em modo retrato) */
-@media (max-width: 480px) {
 
+/* Ajustes específicos para telas muito pequenas (por exemplo, telefones em modo retrato) */
+@media (max-width: 480px) {
     .contact-form form {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ocupa toda a largura */
+        height: auto; /* Altura ajustável conforme o conteúdo */
     }
 }

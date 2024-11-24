@@ -1,3 +1,10 @@
+.container{
+
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+
+}
 .profile-container {
 
     margin: 0px;
@@ -65,4 +72,73 @@
     border: solid 8px #35295f;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     
+}
+
+.home-aboutme-container {
+
+    width: 100%;
+    background-color: #fff;
+    display: inline-flex; 
+
+}
+
+.home-text-container{
+    text-align: left;
+    width: 60%;
+    padding: 20px;
+}
+.button-container{
+    width: 40%;
+    margin: 10px;
+}
+
+.button-container button{
+    margin: 100px;
+    background-color: #35295f;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.button-container button:hover{
+    background-color: #45a049;
+}
+/* Ajuste geral para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        margin-right: 10px;
+        padding: 0px;
+    }
+
+    .profile-container,
+    .project-container {
+        flex-direction:column-reverse;
+        align-items: center;
+    }
+
+    .profile-greetings-container {
+        width: 100%;
+    }
+
+    .profile-picture-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-aboutme-container {
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+    }
+    .home-text-container{
+
+        width: 90%;
+        padding: 20px;
+    }
+    .button-container{
+        width: 100%;
+    }
+
 }

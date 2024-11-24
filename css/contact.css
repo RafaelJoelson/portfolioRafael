@@ -2,11 +2,13 @@
 .contact-form{
 
     flex-direction: row;
+    margin-top: 10px;
     padding: 20px;
     width: 90%;
     background-color: #fff;
     display: inline-flex;
     margin-bottom: 50px;
+
 }
 .contact-form form {
 
@@ -16,13 +18,6 @@
     display: grid;
     gap: 10px;
 
-}
-
-label {
-
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
 }
 
 input,
@@ -55,3 +50,19 @@ textarea {
     background-color: #45a049;
 }
 
+
+/* Ajuste geral para dispositivos móveis */
+@media (max-width: 768px) {
+    .contact-form form {
+        width: 100%;
+        padding: 10px;
+    }
+}
+/* Ajuste específico para telas muito pequenas (por exemplo, telefones em modo retrato) */
+@media (max-width: 480px) {
+
+    .contact-form form {
+        width: 100%;
+        height: auto;
+    }
+}

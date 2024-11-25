@@ -1,0 +1,82 @@
+.ms-container{
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: 300px;
+    background-color: #fff; /* Fundo branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.success-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #e6ffe6;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-container h1 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.success-container button {
+    background-color: #35295f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.success-container button:hover {
+    background-color: #45a049;
+}
+.error-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffe6e6;
+    border: 2px solid #f44336;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-container h1 {
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+.error-container button {
+    background-color: #35295f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.error-container button:hover {
+    background-color: #f44336;
+}
+.success-container,
+.error-container {
+    display: none; /* Esconde ambos inicialmente */
+}
+
+/* Ajustes gerais para dispositivos móveis */
+@media (max-width: 768px) {
+    .success-container,.error-container {
+        margin-left: -12px;
+        width: 300px; /* Ajusta a largura para ocupar todo o espaço disponível */
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+}

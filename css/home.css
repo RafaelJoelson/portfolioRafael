@@ -80,13 +80,13 @@
 /* Estilo para o texto na seção "Sobre Mim" */
 .home-text-container {
     text-align: left; /* Alinha texto à esquerda */
-    width: 60%; /* Define largura como 60% */
+    width: 50%; /* Define largura como 60% */
     padding: 20px; /* Adiciona espaçamento interno */
 }
 
 /* Contêiner para os botões */
 .button-container {
-    width: 40%; /* Define largura como 40% */
+    width: 50%; /* Define largura como 40% */
     margin: 10px; /* Adiciona espaçamento externo */
     align-content: center; /* Centraliza conteúdo verticalmente */
     justify-items: center; /* Centraliza itens horizontalmente */
@@ -115,8 +115,7 @@
         padding: 0px; /* Remove padding */
     }
 
-    .profile-container,
-    .project-container {
+    .profile-container {
         flex-direction: column-reverse; /* Muda direção dos itens para coluna */
         align-items: center; /* Centraliza itens horizontalmente */
     }

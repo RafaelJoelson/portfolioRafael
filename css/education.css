@@ -64,7 +64,7 @@ button:hover {
 }
 
 /* Ajustes específicos para telas pequenas (por exemplo, telefones em modo retrato) */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     /* Reduz o tamanho da fonte e ajusta margens para tabelas em dispositivos menores */
     table {

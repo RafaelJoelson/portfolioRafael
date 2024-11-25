@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/success-or-error.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Rafael Joelson - Contato</title>
 </head>
@@ -30,19 +31,25 @@
         <div class="divisor">
             <h2>Bora trocar uma ideia!?</h2>
         </div>    
-        <div class="aboutme-container">
-            <section class="contact-form">
-                <form id="contact-form" action="success-or-error.html" method="get">
-                    <input type="text" id="name" name="name" placeholder="*Nome" required>
-                    <input type="number" id="phone" name="phone"  placeholder="*Telefone/Whatsapp" maxlength="11" required>
-                    <input type="email" id="email" name="email" placeholder="*E-mail" required>
-                    <textarea id="message" name="message" placeholder="*Mensagem" required></textarea>
-                    <div class="buttons-container">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpar</button>
-                    </div>
-                </form>
-            </section>
+        <div class="ms-container">
+            <div class="success-container fade-up">
+                <!--
+                Exemplo de teste
+                <h1>Mensagem Enviada com Sucesso!</h1>
+                <p>Obrigado pelo seu contato, <strong>Rafael Joelson</strong> retornará assim que possível.</p>
+                <a href="index.html">
+                    <button>Voltar à Página Inicial</button>
+                </a>-->
+            </div>
+            <div class="error-container fade-up">
+                <!--
+                Exemplo de teste
+                <h1>Erro ao Enviar Mensagem</h1>
+                <p>Ocorreu um problema ao enviar sua mensagem. Tente novamente mais tarde.</p>
+                <a href="contact.html">
+                    <button>Tentar Novamente</button>
+                </a>-->
+            </div>
         </div>
     </main>    
     <footer>

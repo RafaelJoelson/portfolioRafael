@@ -62,7 +62,7 @@
 }
 
 /* Estilos para dispositivos móveis */
-@media (max-width: 600px) {  
+@media (max-width: 768px) {  
     .card {
         max-width: 95%; /* Cards ocupam toda a largura disponível */
         height: 400px;

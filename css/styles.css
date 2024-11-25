@@ -97,8 +97,7 @@ input:focus, textarea:focus {
     }
 
     .divisor,
-    .aboutme-container,
-    .project-text-container {
+    .aboutme-container {/*project-text-container = Usada para a página do projeto Aq.chegamos*/
         width: 100%; /* Define largura total */
         padding: 10px; /* Ajusta padding */
     }

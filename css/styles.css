@@ -155,12 +155,27 @@ input:focus, textarea:focus {
     text-align: center; /* Centraliza texto */
     text-decoration: none; /* Remove sublinhado */
     display: block; /* Exibe como bloco */
+    overflow: hidden; /* Esconde o fundo fora da borda */
+    position: relative; /* Necessário para o pseudo-elemento */
 }
 
-.nav-menu a:hover {
-    text-decoration: none; /* Remove sublinhado no hover */
-    background-color: #35295f; /* Fundo diferenciado ao passar o mouse */
+.nav-menu a::before {
+    content: ''; /* Altera o conteúdo para "vazio" */
+    position: absolute; /* Posicionamento flutuante */
+    top: 0; /* Distância do topo */
+    left: -100%; /* Começa fora à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Comprimento total */
+    background-color: #35295f;
+    z-index: -1; /* Fica atrás do texto */
+    transition: left 0.3s ease; /* Suaviza o movimento */
 }
+
+.nav-menu a:hover::before {
+    left: 0; /* Move o fundo para cobrir o link */
+}
+
+
 
 /* Exibe o menu ao clicar no botão hambúrguer */
 .nav-menu.active {

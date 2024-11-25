@@ -47,6 +47,22 @@ td {
     background-color: #cccccc; /* Fundo cinza claro */
 }
 
+/* Estilo padrão para os botões */
+button {
+    background-color: #35295f; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 15px; /* Espaçamento interno vertical e horizontal */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: #45a049; /* Muda a cor de fundo ao passar o mouse */
+}
+
 /* Ajustes específicos para telas pequenas (por exemplo, telefones em modo retrato) */
 @media (max-width: 480px) {
 

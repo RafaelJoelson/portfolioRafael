@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburgerButton = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const hamburgerIcon = './imgs/ham.webp';  // Caminho para o ícone de hambúrguer
-    const closeIcon = './imgs/close.wepb';    // Caminho para o ícone de fechar
+    const closeIcon = './imgs/close.webp';    // Caminho para o ícone de fechar
 
     hamburgerButton.addEventListener('click', function() {
         navMenu.classList.toggle('active'); // Alterna a classe 'active' no menu
